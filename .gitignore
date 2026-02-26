@@ -1,0 +1,21 @@
+# GNS3 project cache and temporary files
+*.log
+*.net
+*.gns3
+*.cfg
+*.bak
+*.tmp
+
+# GNS3 VM and image metadata
+*.gns3project.backup
+*.gns3project.tmp
+*.gns3project.lock
+
+# Packet captures
+*.pcap
+*.pcapng
+
+# OS-specific cruft
+.DS_Store
+Thumbs.db
+
