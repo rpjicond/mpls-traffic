@@ -1,0 +1,46 @@
+Nov 28 14:09:26.901 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Nov 28 14:09:26.901 HYPERVISOR: Started on IP = localhost, TCP port = 42085.
+Nov 28 14:09:26.911 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 28 14:09:26.912 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips 
+Nov 28 14:09:26.912 GENERAL: working_dir=/root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips
+Nov 28 14:09:26.912 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/250a15b7-7844-4756-aa8f-eebe716b295d 
+Nov 28 14:09:26.912 GENERAL: working_dir=/root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/250a15b7-7844-4756-aa8f-eebe716b295d
+Nov 28 14:09:26.912 HYPERVISOR: exec_cmd: vm create R4 4 c2691 
+Nov 28 14:09:26.912 VM: VM R4 created.
+Nov 28 14:09:26.913 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Nov 28 14:09:26.913 HYPERVISOR: exec_cmd: c2691 get_mac_addr R4 
+Nov 28 14:09:26.913 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:09:26.914 HYPERVISOR: exec_cmd: vm set_ram R4 192 
+Nov 28 14:09:26.914 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Nov 28 14:09:26.915 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Nov 28 14:09:26.973 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:09:55.827 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:11:02.848 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 28 14:11:02.848 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 16 WIC-2T 
+Nov 28 14:11:26.450 HYPERVISOR: exec_cmd: nio create_udp udp-d03ff7af-25ae-431d-a0c6-93cf77b603bc 10010 127.0.0.1 10011 
+Nov 28 14:11:26.672 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 16 udp-d03ff7af-25ae-431d-a0c6-93cf77b603bc 
+Nov 28 14:11:26.673 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 28 14:12:26.221 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:13:29.868 HYPERVISOR: exec_cmd: nio create_udp udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 10032 127.0.0.1 10033 
+Nov 28 14:13:29.869 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 17 udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 
+Nov 28 14:13:29.869 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 28 14:14:35.167 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:17:33.365 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Nov 28 14:17:33.366 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 28 14:17:33.366 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 28 14:17:33.366 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Nov 28 14:17:33.366 HYPERVISOR: exec_cmd: vm start R4 
+Nov 28 14:18:46.719 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:19:35.136 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:34:49.389 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Nov 28 14:34:49.390 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 28 14:34:49.390 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 28 15:53:21.498 HYPERVISOR: exec_cmd: nio bind_filter udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 2 capture 
+Nov 28 15:53:21.498 HYPERVISOR: exec_cmd: nio setup_filter udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 2 c_hdlc /root/GNS3/projects/TP_MPLS_Dy/project-files/captures/R4_Serial01_to_R5_Serial00.pcap 
+Nov 28 16:12:05.533 HYPERVISOR: exec_cmd: nio unbind_filter udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 2 
+Nov 28 16:12:10.895 HYPERVISOR: exec_cmd: nio bind_filter udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 2 capture 
+Nov 28 16:12:10.895 HYPERVISOR: exec_cmd: nio setup_filter udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 2 c_hdlc /root/GNS3/projects/TP_MPLS_Dy/project-files/captures/R4_Serial01_to_R5_Serial00.pcap 
+Nov 28 16:13:36.230 HYPERVISOR: exec_cmd: nio unbind_filter udp-1b63dcfe-ca35-4900-a6b2-6ebdb3d6b782 2 
+Nov 28 16:26:06.018 HYPERVISOR: exec_cmd: vm set_ios R4 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 16:26:34.164 HYPERVISOR: exec_cmd: vm extract_config R4 
+Nov 28 16:26:34.175 HYPERVISOR: exec_cmd: vm extract_config R4 

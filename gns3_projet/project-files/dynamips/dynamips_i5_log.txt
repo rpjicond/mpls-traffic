@@ -1,0 +1,53 @@
+Nov 29 15:49:31.441 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 29 15:49:31.441 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 39393.
+Nov 29 15:49:31.450 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 29 15:49:31.450 HYPERVISOR: exec_cmd: hypervisor working_dir /home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips 
+Nov 29 15:49:31.450 GENERAL: working_dir=/home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips
+Nov 29 15:49:31.450 HYPERVISOR: exec_cmd: hypervisor working_dir /home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/5e2b6870-0245-44f2-a639-dc4dfd56c235 
+Nov 29 15:49:31.450 GENERAL: working_dir=/home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/5e2b6870-0245-44f2-a639-dc4dfd56c235
+Nov 29 15:49:31.450 HYPERVISOR: exec_cmd: vm create R5 5 c2691 
+Nov 29 15:49:31.450 VM: VM R5 created.
+Nov 29 15:49:31.451 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Nov 29 15:49:31.451 HYPERVISOR: exec_cmd: c2691 get_mac_addr R5 
+Nov 29 15:49:31.451 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Nov 29 15:49:31.451 HYPERVISOR: exec_cmd: vm set_ios R5 /home/etena/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 29 15:49:31.451 HYPERVISOR: exec_cmd: c2691 set_mac_addr R5 c005.0849.0000 
+Nov 29 15:49:31.451 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Nov 29 15:49:31.451 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+Nov 29 15:49:31.452 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:31.452 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 16 WIC-2T 
+Nov 29 15:49:31.452 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:31.452 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 32 WIC-1T 
+Nov 29 15:49:32.907 HYPERVISOR: exec_cmd: nio create_udp udp-38a6404a-2bec-470e-a46b-8d246f5499fd 10016 127.0.0.1 10017 
+Nov 29 15:49:33.114 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 32 udp-38a6404a-2bec-470e-a46b-8d246f5499fd 
+Nov 29 15:49:33.114 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:33.463 HYPERVISOR: exec_cmd: nio create_udp udp-a8b5556f-2e39-4144-a9ac-543e70c258a5 10026 127.0.0.1 10027 
+Nov 29 15:49:33.464 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 17 udp-a8b5556f-2e39-4144-a9ac-543e70c258a5 
+Nov 29 15:49:33.464 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:33.539 HYPERVISOR: exec_cmd: nio create_udp udp-cb877871-9061-4ddd-8bc7-8b185051cf2d 10034 127.0.0.1 10035 
+Nov 29 15:49:33.540 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 16 udp-cb877871-9061-4ddd-8bc7-8b185051cf2d 
+Nov 29 15:49:33.540 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:33.869 HYPERVISOR: exec_cmd: nio create_udp udp-8610ef7f-21f6-493e-8220-5e3391812b26 10050 127.0.0.1 10051 
+Nov 29 15:49:33.869 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-8610ef7f-21f6-493e-8220-5e3391812b26 
+Nov 29 15:49:33.870 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:33.979 HYPERVISOR: exec_cmd: nio create_udp udp-c5aa09d2-7bd2-4c29-9569-3e69a88e58a5 10056 127.0.0.1 10057 
+Nov 29 15:49:33.980 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-c5aa09d2-7bd2-4c29-9569-3e69a88e58a5 
+Nov 29 15:49:33.980 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:42.050 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Nov 29 15:49:42.051 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 29 15:49:42.052 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:49:42.052 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Nov 29 15:49:42.053 HYPERVISOR: exec_cmd: vm start R5 
+Nov 29 15:50:12.312 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 29 15:50:12.313 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 29 15:51:15.575 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:51:15.575 HYPERVISOR: exec_cmd: vm stop R5 
+Nov 29 15:51:15.687 VM: VM R5 shutdown.
+Nov 29 15:51:15.688 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 29 15:51:16.604 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 29 15:51:16.605 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 29 15:51:16.606 HYPERVISOR: exec_cmd: vm delete R5 
+Nov 29 15:51:16.606 VM: VM R5 destroyed.
+Nov 29 15:51:16.606 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 29 15:51:17.043 HYPERVISOR: Stopped.
+Nov 29 15:51:17.043 GENERAL: reset done.

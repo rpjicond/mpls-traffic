@@ -1,0 +1,278 @@
+R1 CONFIG
+
+int f0/0
+ip add 172.16.0.254 255.255.252.0
+no shut
+int s0/0
+ip add 172.16.231.1 255.255.255.0
+no shut
+int s0/1
+ip add 172.16.221.1 255.255.255.0
+no shut
+int s0/2
+ip add 172.16.211.1 255.255.255.0
+no shut
+
+router ospf 10
+network 172.16.0.0 0.0.3.255 area 0
+network 172.16.211.0 0.0.0.255 area 0
+network 172.16.221.0 0.0.0.255 area 0
+network 172.16.231.0 0.0.0.255 area 0
+//MLPS CONFIG R1
+
+ip cef
+mpls traffic-eng tunnels
+int s0/0
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int s0/1
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int s0/2
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int loopback 0
+ip add 10.0.11.1 255.255.255.255
+
+router ospf 10
+mpls traffic-eng area 0
+mpls traffic-eng router-id loopback 0
+net 10.0.11.0 0.0.0.255 area 0
+
+int tunnel 151
+ip unnumbered loopback 0
+tunnel destination 10.0.11.5
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng autoroute announce
+tunnel mpls traffic-eng path-option 1 explicit name HAUT
+ip explicit-path name HAUT enable
+next-address 172.16.231.2
+next-address 172.16.232.2
+next-address 172.16.233.2
+
+int tunnel 152
+ip unnumbered loopback 0
+tunnel destination 10.0.11.5 
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng autoroute announce
+tunnel mpls traffic-eng path-option 1 explicit name MILIEU
+ip explicit-path name MILIEU enable
+next-address 172.16.221.2
+next-address 172.16.222.2
+
+
+R2 CONFIG
+
+int s0/0
+ip add 172.16.232.1 255.255.255.0
+no shut
+int s0/1
+ip add 172.16.231.2 255.255.255.0
+no shut
+
+router ospf 10
+network 172.16.231.0 0.0.0.255 area 0
+network 172.16.232.0 0.0.0.255 area 0
+/MLPS CONFIG R2
+
+ip cef
+mpls traffic-eng tunnels
+
+int s0/0
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int s0/1
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int loopback 0
+ip add 10.0.11.2 255.255.255.255
+
+router ospf 10
+mpls traffic-eng area 0
+mpls traffic-eng router-id loopback 0
+net 10.0.11.0 0.0.0.255 area 0
+
+R3 CONFIG
+
+int s0/0
+ip add 172.16.233.1 255.255.255.0
+no shut
+int s0/1
+ip add 172.16.232.2 255.255.255.0
+no shut
+
+router ospf 10
+network 172.16.233.0 0.0.0.255 area 0
+network 172.16.232.0 0.0.0.255 area 0
+/MLPS CONFIG R3
+
+ip cef
+mpls traffic-eng tunnels
+
+int s0/0
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int s0/1
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int loopback 0
+ip add 10.0.11.3 255.255.255.255
+
+router ospf 10
+mpls traffic-eng area 0
+mpls traffic-eng router-id loopback 0
+net 10.0.11.0 0.0.0.255 area 0
+
+
+R4 CONFIG
+
+int s0/0
+ip add 172.16.221.2 255.255.255.0
+no shut
+int s0/1
+ip add 172.16.222.1 255.255.255.0
+no shut
+
+router ospf 10
+network 172.16.221.0 0.0.0.255 area 0
+network 172.16.222.0 0.0.0.255 area 0
+/MLPS CONFIG R4
+
+ip cef
+mpls traffic-eng tunnels
+
+int s0/0
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int s0/1
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int loopback 0
+ip add 10.0.11.4 255.255.255.255
+
+router ospf 10
+mpls traffic-eng area 0
+mpls traffic-eng router-id loopback 0
+net 10.0.11.0 0.0.0.255 area 0
+
+R5 CONFIG
+
+int f0/0
+ip add 172.16.4.254 255.255.252.0
+no shut
+int s0/0
+ip add 172.16.222.2 255.255.255.0
+no shut
+int s0/1
+ip add 172.16.233.2 255.255.255.0
+no shut
+int s0/2
+ip add 172.16.211.2 255.255.255.0
+no shut
+
+router ospf 10
+network 172.16.4.0 0.0.3.255 area 0
+network 172.16.211.0 0.0.0.255 area 0
+network 172.16.222.0 0.0.0.255 area 0
+network 172.16.233.0 0.0.0.255 area 0
+//MLPS CONFIG R5
+
+ip cef
+mpls traffic-eng tunnels
+
+int s0/0
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int s0/1
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int s0/2
+mpls ip
+mpls traffic-eng tunnels
+no shut
+int loopback 0
+ip add 10.0.11.5 255.255.255.255
+
+router ospf 10
+mpls traffic-eng area 0
+mpls traffic-eng router-id loopback 0
+net 10.0.11.0 0.0.0.255 area 0
+
+int tunnel 51
+ip unnumbered loopback 0
+tunnel destination 10.0.11.1 
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng autoroute announce
+tunnel mpls traffic-eng path-option 1 explicit name HAUT
+ip explicit-path name HAUT enable
+next-address 172.16.233.1
+next-address 172.16.232.1
+next-address 172.16.231.1
+tunnel mpls traffic-eng path-option 2 explicit name MILIEU
+ip explicit-path name MILIEU enable
+next-address 172.16.222.1
+next-address 172.16.221.1
+
+int tunnel 52
+ip unnumbered loopback 0
+tunnel destination 10.0.11.1 
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng autoroute announce
+tunnel mpls traffic-eng priority 7 7
+tunnel mpls traffic-eng bandwidth 300
+tunnel mpls traffic-eng path-option 1 dynamic
+
+int tunnel 53
+ip unnumbered loopback 0
+tunnel destination 10.0.11.1 
+tunnel mode mpls traffic-eng
+tunnel mpls traffic-eng autoroute announce
+tunnel mpls traffic-eng priority 7 7
+tunnel mpls traffic-eng bandwith 1200
+tunnel mpls traffic-eng path-option 1 dynamic
+R1
+int s0/0
+ip rsvp bandwidth 2000
+int s0/1
+ip rsvp bandwidth 1000
+int s0/2
+ip rsvp bandwidth 500
+
+R2
+int s0/0
+ip rsvp bandwidth 2000
+int s0/1
+ip rsvp bandwidth 2000
+
+R3
+int s0/0
+ip rsvp bandwidth 2000
+int s0/1
+ip rsvp bandwidth 2000
+
+R4
+int s0/0
+ip rsvp bandwidth 1000
+int s0/1
+ip rsvp bandwidth 1000
+
+R5
+int s0/0
+ip rsvp bandwidth 1000
+int s0/1
+ip rsvp bandwidth 2000
+int s0/2
+ip rsvp bandwidth 500
+
+

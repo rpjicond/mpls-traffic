@@ -1,0 +1,61 @@
+Nov 28 14:09:30.067 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Nov 28 14:09:30.068 HYPERVISOR: Started on IP = localhost, TCP port = 38929.
+Nov 28 14:09:30.077 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 28 14:09:30.077 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips 
+Nov 28 14:09:30.077 GENERAL: working_dir=/root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips
+Nov 28 14:09:30.077 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/5e2b6870-0245-44f2-a639-dc4dfd56c235 
+Nov 28 14:09:30.077 GENERAL: working_dir=/root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/5e2b6870-0245-44f2-a639-dc4dfd56c235
+Nov 28 14:09:30.078 HYPERVISOR: exec_cmd: vm create R5 5 c2691 
+Nov 28 14:09:30.078 VM: VM R5 created.
+Nov 28 14:09:30.078 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Nov 28 14:09:30.078 HYPERVISOR: exec_cmd: c2691 get_mac_addr R5 
+Nov 28 14:09:30.079 HYPERVISOR: exec_cmd: vm set_ios R5 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:09:30.079 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+Nov 28 14:09:30.080 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Nov 28 14:09:30.080 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Nov 28 14:09:30.134 HYPERVISOR: exec_cmd: vm set_ios R5 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:09:57.241 HYPERVISOR: exec_cmd: vm set_ios R5 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:10:00.395 HYPERVISOR: exec_cmd: vm set_ios R5 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:11:08.206 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:11:08.207 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 16 WIC-2T 
+Nov 28 14:11:13.774 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:11:13.775 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 32 WIC-1T 
+Nov 28 14:11:55.280 HYPERVISOR: exec_cmd: nio create_udp udp-7d5a539e-2ccf-4cd5-8b85-6289e2d64451 10016 127.0.0.1 10017 
+Nov 28 14:11:55.499 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 32 udp-7d5a539e-2ccf-4cd5-8b85-6289e2d64451 
+Nov 28 14:11:55.499 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:12:04.769 HYPERVISOR: exec_cmd: nio create_udp udp-7fdf9d97-e032-4d59-be5f-89c9b68cb0ce 10020 127.0.0.1 10021 
+Nov 28 14:12:04.771 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 16 udp-7fdf9d97-e032-4d59-be5f-89c9b68cb0ce 
+Nov 28 14:12:04.771 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:13:10.032 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:13:10.032 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R5 0 16 
+Nov 28 14:13:10.033 HYPERVISOR: exec_cmd: nio delete udp-7fdf9d97-e032-4d59-be5f-89c9b68cb0ce 
+Nov 28 14:13:20.871 HYPERVISOR: exec_cmd: nio create_udp udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 10020 127.0.0.1 10021 
+Nov 28 14:13:20.872 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 17 udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 
+Nov 28 14:13:20.872 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:13:29.875 HYPERVISOR: exec_cmd: nio create_udp udp-1e46b407-dd32-4dfa-b230-9f1a6739b149 10034 127.0.0.1 10035 
+Nov 28 14:13:29.876 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 16 udp-1e46b407-dd32-4dfa-b230-9f1a6739b149 
+Nov 28 14:13:29.876 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:14:13.759 HYPERVISOR: exec_cmd: nio create_udp udp-c7e1a8e6-f113-4e9c-a4f8-7b9d8bcb572c 10050 127.0.0.1 10051 
+Nov 28 14:14:13.760 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-c7e1a8e6-f113-4e9c-a4f8-7b9d8bcb572c 
+Nov 28 14:14:13.760 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:14:37.271 HYPERVISOR: exec_cmd: vm set_ios R5 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:17:33.383 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Nov 28 14:17:33.385 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 28 14:17:33.386 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 14:17:33.387 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Nov 28 14:17:33.387 HYPERVISOR: exec_cmd: vm start R5 
+Nov 28 14:34:49.393 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Nov 28 14:34:49.394 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 28 14:34:49.395 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 16:11:06.096 HYPERVISOR: exec_cmd: nio bind_filter udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 2 capture 
+Nov 28 16:11:06.096 HYPERVISOR: exec_cmd: nio setup_filter udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 2 c_hdlc /root/GNS3/projects/TP_MPLS_Dy/project-files/captures/R5_Serial01_to_R3_Serial00.pcap 
+Nov 28 16:12:08.540 HYPERVISOR: exec_cmd: nio unbind_filter udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 2 
+Nov 28 16:12:15.893 HYPERVISOR: exec_cmd: nio bind_filter udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 2 capture 
+Nov 28 16:12:15.894 HYPERVISOR: exec_cmd: nio setup_filter udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 2 c_hdlc /root/GNS3/projects/TP_MPLS_Dy/project-files/captures/R5_Serial01_to_R3_Serial00.pcap 
+Nov 28 16:13:42.094 HYPERVISOR: exec_cmd: nio unbind_filter udp-dea33325-36ee-4c43-ab6f-1eb2483eb6ba 2 
+Nov 28 16:18:16.458 HYPERVISOR: exec_cmd: nio create_udp udp-6156ae44-1a2c-4388-8c1f-e99409139ade 10064 127.0.0.1 10065 
+Nov 28 16:18:16.460 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-6156ae44-1a2c-4388-8c1f-e99409139ade 
+Nov 28 16:18:16.460 HYPERVISOR: exec_cmd: vm get_status R5 
+Nov 28 16:18:16.460 HYPERVISOR: exec_cmd: vm slot_enable_nio R5 0 1 
+Nov 28 16:23:04.151 HYPERVISOR: exec_cmd: vm extract_config R5 
+Nov 28 16:23:04.152 HYPERVISOR: exec_cmd: vm extract_config R5 

@@ -1,0 +1,42 @@
+Nov 29 15:49:31.416 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 29 15:49:31.416 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56447.
+Nov 29 15:49:31.425 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 29 15:49:31.425 HYPERVISOR: exec_cmd: hypervisor working_dir /home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips 
+Nov 29 15:49:31.425 GENERAL: working_dir=/home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips
+Nov 29 15:49:31.425 HYPERVISOR: exec_cmd: hypervisor working_dir /home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/250a15b7-7844-4756-aa8f-eebe716b295d 
+Nov 29 15:49:31.425 GENERAL: working_dir=/home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/250a15b7-7844-4756-aa8f-eebe716b295d
+Nov 29 15:49:31.425 HYPERVISOR: exec_cmd: vm create R4 4 c2691 
+Nov 29 15:49:31.426 VM: VM R4 created.
+Nov 29 15:49:31.426 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Nov 29 15:49:31.426 HYPERVISOR: exec_cmd: c2691 get_mac_addr R4 
+Nov 29 15:49:31.426 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Nov 29 15:49:31.426 HYPERVISOR: exec_cmd: vm set_ios R4 /home/etena/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 29 15:49:31.426 HYPERVISOR: exec_cmd: c2691 set_mac_addr R4 c004.083a.0000 
+Nov 29 15:49:31.427 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Nov 29 15:49:31.427 HYPERVISOR: exec_cmd: vm set_ram R4 192 
+Nov 29 15:49:31.427 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 29 15:49:31.427 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 16 WIC-2T 
+Nov 29 15:49:32.619 HYPERVISOR: exec_cmd: nio create_udp udp-72782aec-bdb6-46e5-ba58-0da4dba4e4b8 10010 127.0.0.1 10011 
+Nov 29 15:49:32.826 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 16 udp-72782aec-bdb6-46e5-ba58-0da4dba4e4b8 
+Nov 29 15:49:32.827 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 29 15:49:33.533 HYPERVISOR: exec_cmd: nio create_udp udp-bd38edad-6629-432e-b4ee-39e72995d75e 10032 127.0.0.1 10033 
+Nov 29 15:49:33.533 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 17 udp-bd38edad-6629-432e-b4ee-39e72995d75e 
+Nov 29 15:49:33.533 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 29 15:49:42.049 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Nov 29 15:49:42.050 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 29 15:49:42.050 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 29 15:49:42.051 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Nov 29 15:49:42.051 HYPERVISOR: exec_cmd: vm start R4 
+Nov 29 15:50:12.301 HYPERVISOR: exec_cmd: vm extract_config R4 
+Nov 29 15:50:12.302 HYPERVISOR: exec_cmd: vm extract_config R4 
+Nov 29 15:51:15.567 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 29 15:51:15.568 HYPERVISOR: exec_cmd: vm stop R4 
+Nov 29 15:51:15.665 VM: VM R4 shutdown.
+Nov 29 15:51:15.666 HYPERVISOR: exec_cmd: vm extract_config R4 
+Nov 29 15:51:16.329 HYPERVISOR: exec_cmd: vm get_status R4 
+Nov 29 15:51:16.329 HYPERVISOR: exec_cmd: vm extract_config R4 
+Nov 29 15:51:16.329 HYPERVISOR: exec_cmd: vm delete R4 
+Nov 29 15:51:16.329 VM: VM R4 destroyed.
+Nov 29 15:51:16.329 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 29 15:51:16.513 HYPERVISOR: Stopped.
+Nov 29 15:51:16.513 GENERAL: reset done.

@@ -1,0 +1,19 @@
+Nov 29 15:49:31.502 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 29 15:49:31.502 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49905.
+Nov 29 15:49:31.511 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 29 15:49:31.511 HYPERVISOR: exec_cmd: hypervisor working_dir /home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips 
+Nov 29 15:49:31.511 GENERAL: working_dir=/home/etena/GNS3/projects/TP_MPLS_Dy/project-files/dynamips
+Nov 29 15:49:31.511 HYPERVISOR: exec_cmd: ethsw create Switch2 
+Nov 29 15:49:33.755 HYPERVISOR: exec_cmd: nio create_udp udp-317c0c4a-c1b3-4b63-89d8-d6adcacc965c 10045 127.0.0.1 10044 
+Nov 29 15:49:33.755 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-317c0c4a-c1b3-4b63-89d8-d6adcacc965c 
+Nov 29 15:49:33.772 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-317c0c4a-c1b3-4b63-89d8-d6adcacc965c 1 
+Nov 29 15:49:33.814 HYPERVISOR: exec_cmd: nio create_udp udp-cba80d7b-e60e-4f4d-b59e-c2c7fca227f4 10047 127.0.0.1 10046 
+Nov 29 15:49:33.814 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-cba80d7b-e60e-4f4d-b59e-c2c7fca227f4 
+Nov 29 15:49:33.832 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-cba80d7b-e60e-4f4d-b59e-c2c7fca227f4 1 
+Nov 29 15:49:33.875 HYPERVISOR: exec_cmd: nio create_udp udp-ea2fc6ce-a6c2-4356-9c96-cfd152b550a2 10049 127.0.0.1 10048 
+Nov 29 15:49:33.875 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-ea2fc6ce-a6c2-4356-9c96-cfd152b550a2 
+Nov 29 15:49:33.892 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ea2fc6ce-a6c2-4356-9c96-cfd152b550a2 1 
+Nov 29 15:51:16.102 HYPERVISOR: exec_cmd: ethsw delete Switch2 
+Nov 29 15:51:16.146 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 29 15:51:16.605 HYPERVISOR: Stopped.
+Nov 29 15:51:16.605 GENERAL: reset done.

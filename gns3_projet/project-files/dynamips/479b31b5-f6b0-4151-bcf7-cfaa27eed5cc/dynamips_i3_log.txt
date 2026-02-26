@@ -1,0 +1,59 @@
+Nov 28 14:09:24.899 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Nov 28 14:09:24.900 HYPERVISOR: Started on IP = localhost, TCP port = 53459.
+Nov 28 14:09:24.909 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 28 14:09:24.910 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips 
+Nov 28 14:09:24.910 GENERAL: working_dir=/root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips
+Nov 28 14:09:24.910 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/479b31b5-f6b0-4151-bcf7-cfaa27eed5cc 
+Nov 28 14:09:24.910 GENERAL: working_dir=/root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/479b31b5-f6b0-4151-bcf7-cfaa27eed5cc
+Nov 28 14:09:24.910 HYPERVISOR: exec_cmd: vm create R3 3 c2691 
+Nov 28 14:09:24.910 VM: VM R3 created.
+Nov 28 14:09:24.911 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Nov 28 14:09:24.911 HYPERVISOR: exec_cmd: c2691 get_mac_addr R3 
+Nov 28 14:09:24.912 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:09:24.912 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Nov 28 14:09:24.912 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Nov 28 14:09:24.913 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Nov 28 14:09:24.962 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:09:54.809 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:10:57.785 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 28 14:10:57.786 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-2T 
+Nov 28 14:12:04.777 HYPERVISOR: exec_cmd: nio create_udp udp-e9a6a35c-720f-4f6a-9ee5-282f786e4b40 10022 127.0.0.1 10023 
+Nov 28 14:12:04.998 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 16 udp-e9a6a35c-720f-4f6a-9ee5-282f786e4b40 
+Nov 28 14:12:04.998 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 28 14:12:13.391 HYPERVISOR: exec_cmd: nio create_udp udp-e7753fe6-6e1d-41eb-9488-6c577ae3e97e 10028 127.0.0.1 10029 
+Nov 28 14:12:13.392 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 17 udp-e7753fe6-6e1d-41eb-9488-6c577ae3e97e 
+Nov 28 14:12:13.393 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 28 14:13:10.038 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 28 14:13:10.038 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 16 
+Nov 28 14:13:10.039 HYPERVISOR: exec_cmd: nio delete udp-e9a6a35c-720f-4f6a-9ee5-282f786e4b40 
+Nov 28 14:13:20.878 HYPERVISOR: exec_cmd: nio create_udp udp-28234625-3845-4846-960c-c641240de5f5 10022 127.0.0.1 10023 
+Nov 28 14:13:20.879 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 16 udp-28234625-3845-4846-960c-c641240de5f5 
+Nov 28 14:13:20.880 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 28 14:14:33.990 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:15:16.911 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:17:32.071 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Nov 28 14:17:32.071 VM: VM Ghost created.
+Nov 28 14:17:32.073 HYPERVISOR: exec_cmd: vm set_ios Ghost /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:17:32.074 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 28 14:17:32.074 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 28 14:17:32.075 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Nov 28 14:17:32.075 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 28 14:17:32.083 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Nov 28 14:17:32.083 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 28 14:17:33.030 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 28 14:17:33.031 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 28 14:17:33.136 VM: VM Ghost shutdown.
+Nov 28 14:17:33.137 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 28 14:17:33.138 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 28 14:17:33.138 VM: VM Ghost destroyed.
+Nov 28 14:17:33.140 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 28 14:17:33.141 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 28 14:17:33.141 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 28 14:17:33.142 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Nov 28 14:17:33.143 HYPERVISOR: exec_cmd: vm start R3 
+Nov 28 14:18:45.191 HYPERVISOR: exec_cmd: vm set_ios R3 /root/GNS3/images/IOS/c2691-adventerprisek9-mz.124-5a.image 
+Nov 28 14:34:49.384 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Nov 28 14:34:49.385 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /root/GNS3/projects/TP_MPLS_Dy/project-files/dynamips/c2691-adventerprisek9-mz.124-5a.image-192.ghost 
+Nov 28 14:34:49.385 HYPERVISOR: exec_cmd: vm get_status R3 
+Nov 28 16:26:03.969 HYPERVISOR: exec_cmd: vm extract_config R3 
+Nov 28 16:26:03.981 HYPERVISOR: exec_cmd: vm extract_config R3 
